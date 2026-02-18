@@ -105,25 +105,27 @@
             <h3 class="text-neutral font-bold text-lg mb-5">Cash Out</h3>
             <fieldset class="fieldset">
                 <label class="label text-neutral/70 text-base font-bold">Agent Number</label>
-                <input id="login-input-number" type="text" maxlength="11" minlength="11"
-                    class="w-full input rounded-full bg-base-200" placeholder="Enter agent number" />
+                <input id="agent-input-number" type="text" class="w-full input rounded-full bg-base-200" placeholder="Enter agent number" />
 
                 <br>
 
                 <label class="label text-neutral/70 text-base font-bold">Amount</label>
-                <input id="login-input-number" type="text" maxlength="11" minlength="11" class="w-full input rounded-full bg-base-200"
+                <input id="cashout-money" type="text" class="w-full input rounded-full bg-base-200"
                     placeholder="Enter amount to withdraw" />
                 
                 <br>
 
                 <label class="label text-neutral/70 text-base font-bold">Pin Number</label>
-                <input id="login-input-pin" type="password" maxlength="4" class="w-full input rounded-full bg-base-200"
+                <input id="cashout-input-pin" type="password" maxlength="4" class="w-full input rounded-full bg-base-200"
                     placeholder="Enter 4 digit pin number" />
                 <button id="btn-cashout" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
             </fieldset>
         </div>
     </div>
     
+
+
+    <script src="./js/cashout.js"></script>
 </body>
 
 </html>
