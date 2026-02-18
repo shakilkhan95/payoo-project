@@ -33,7 +33,152 @@
         }
     </style>
 </head>
-<body>
-    <h1>Home page</h1>
+<body class="min-h-screen mx-auto bg-base-100">
+    <header class="flex justify-between items-center w-11/12 mx-auto py-5 border-b-2 border-gray-300">
+        <div class="flex gap-1">
+            <div class="logo w-[60px]">
+                <img src="./assets/logo.png" alt="">
+            </div>
+
+            <div class="available-balance">
+                <h3 class="text-xl font-bold">$<span id="balance">45000</span></h3>
+                <p class="text-neutral/50">Available Balance</p>
+            </div>
+        </div>
+
+        <div>
+            <a class="btn btn-soft text-neutral/50" href="index.html">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </a>
+        </div>
+    </header>
+
+    <!-- hero section  -->
+    <section class="w-11/12 mx-auto py-16 space-y-5">
+        <div class="space-y-5">
+            <h2 class="text-neutral font-bold text-3xl">Welcome to Pay<span class="text-primary">oo</span></h2>
+
+            <p class="text-neutral/50">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+        </div>
+
+        <!-- buttons container -->
+         <div class="grid grid-cols-3 gap-4">
+            <button class="btn btn-primary btn-soft w-full flex-col py-10">
+                <img src="./assets/opt-1.png" alt="">
+                <p class="text-neutral/50">Add Money</p>
+            </button>
+
+            <button class="btn btn-primary btn-soft w-full flex-col py-10">
+                <img src="./assets/opt-2.png" alt="">
+                <p class="text-neutral/50">Cash Out</p>
+            </button>
+
+            <button class="btn btn-primary btn-soft w-full flex-col py-10">
+                <img src="./assets/opt-3.png" alt="">
+                <p class="text-neutral/50">Transfer Money</p>
+            </button>
+
+            <button class="btn btn-primary btn-soft w-full flex-col py-10">
+                <img src="./assets/opt-4.png" alt="">
+                <p class="text-neutral/50">Get Bonuses</p>
+            </button>
+
+            <button class="btn btn-primary btn-soft w-full flex-col py-10">
+                <img src="./assets/opt-5.png" alt="">
+                <p class="text-neutral/50">Pay Bill</p>
+            </button>
+
+            <button class="btn btn-primary btn-soft w-full flex-col py-10">
+                <img src="./assets/opt-6.png" alt="">
+                <p class="text-neutral/50">Transactions</p>
+            </button>
+         </div>
+    </section>
+
+    <!-- latest payment section -->
+     <section class="bg-base-200 p-7">
+        <div class="space-y-5">
+            <header class="flex justify-between items-center">
+                <h3 class="text-lg font-bold text-neutral">Latest Payment</h3>
+
+                <p class="text-neutral/50 cursor-pointer">View All</p>
+            </header>
+
+            <div class="space-y-5">
+                <div class="bg-base-100 p-4 flex justify-between items-center rounded-lg">
+                    <div class="space-x-2 flex">
+                        <div class="p-3 rounded-full bg-base-200">
+                            <img src="./assets/opt-1.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-bold text-neutral/70">Electricity Bill</h3>
+
+                            <p class="text-neutral/70">Today 01:44 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div class="bg-base-100 p-4 flex justify-between items-center rounded-lg">
+                    <div class="space-x-2 flex">
+                        <div class="p-3 rounded-full bg-base-200">
+                            <img src="./assets/opt-1.png" alt="">
+                        </div>
+                
+                        <div>
+                            <h3 class="text-lg font-bold text-neutral/70">Bank Deposit</h3>
+                
+                            <p class="text-neutral/70">Today 01:44 AM</p>
+                        </div>
+                    </div>
+                
+                    <div class="cursor-pointer">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div class="bg-base-100 p-4 flex justify-between items-center rounded-lg">
+                    <div class="space-x-2 flex">
+                        <div class="p-3 rounded-full bg-base-200">
+                            <img src="./assets/opt-1.png" alt="">
+                        </div>
+                
+                        <div>
+                            <h3 class="text-lg font-bold text-neutral/70">Mobile Recharge</h3>
+                
+                            <p class="text-neutral/70">Today 01:44 AM</p>
+                        </div>
+                    </div>
+                
+                    <div class="cursor-pointer">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div class="bg-base-100 p-4 flex justify-between items-center rounded-lg">
+                    <div class="space-x-2 flex">
+                        <div class="p-3 rounded-full bg-base-200">
+                            <img src="./assets/opt-1.png" alt="">
+                        </div>
+                
+                        <div>
+                            <h3 class="text-lg font-bold text-neutral/70">Gas Bill</h3>
+                
+                            <p class="text-neutral/70">Today 01:44 AM</p>
+                        </div>
+                    </div>
+                
+                    <div class="cursor-pointer">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
 </body>
 </html>
