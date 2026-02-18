@@ -20,10 +20,10 @@ document.getElementById("btn-cashout").addEventListener("click", () => {
   } else {
     const newBalance = Number(balance) - Number(cashoutAmount);
     const balanceElement = getValue("balance", "element");
-    
-    balanceElement.innerText = newBalance;
 
     alert("Cashout Successful");
+
+    balanceElement.innerText = newBalance;
   }
   
 });
