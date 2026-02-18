@@ -1,29 +1,29 @@
 document.getElementById("btn-cashout").addEventListener("click", () => {
-  const agentNumberInput = document.getElementById("agent-input-number");
-  const agentNumber = agentNumberInput.value;
-
-  const cashoutAmountInput = document.getElementById("cashout-money");
-  const cashoutAmount = Number(cashoutAmountInput.value);
-
-  const userPinInput = document.getElementById("cashout-input-pin");
-  const userPin = userPinInput.value;
-
-  const userBalance = document.getElementById("balance");
-  const balance = Number(userBalance.innerText);
+  const agentNumber = getValue('agent-input-number', 'value');
+  const cashoutAmount = getValue('cashout-money', 'value');
+  const userPin = getValue('cashout-input-pin', 'value');
+  const balance = getValue('balance', 'text');
 
   if (agentNumber.length !== 11) {
     alert("Please provide a valid agent number");
-  } else if (typeof cashoutAmount !== 'number' || cashoutAmount > balance){
+    return;
+  } else if (
+    isNaN(Number(cashoutAmount)) ||
+    Number(cashoutAmount) <= 0 ||
+    Number(cashoutAmount) > balance
+  ) {
     alert("Please provide a valid amount");
-  } else if (userPin !== '1234'){
+    return;
+  } else if (userPin !== "1234") {
     alert("Please provide a valid pin");
+    return;
   } else {
-    const newBalance = balance - cashoutAmount;
-    alert('Cashout Successful');
-    userBalance.innerText = newBalance;
-  }
+    const newBalance = Number(balance) - Number(cashoutAmount);
+    const balanceElement = getValue("balance", "element");
+    
+    balanceElement.innerText = newBalance;
 
-  agentNumberInput.value = '';
-  cashoutAmountInput.value = '';
-  userPinInput.value = '';
+    alert("Cashout Successful");
+  }
+  
 });
