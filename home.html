@@ -63,7 +63,7 @@
         </div>
 
         <!-- buttons container -->
-         <div id="btn-container" class="grid grid-cols-3 gap-4">
+         <div id="btn-container" class="grid grid-cols-3 md:grid-cols-6 gap-4">
             <button type="button" value="add-money-section" class="btn btn-primary btn-soft w-full flex-col py-10">
                 <img src="./assets/opt-1.png" alt="">
                 <p class="text-neutral/50">Add Money</p>
@@ -74,7 +74,7 @@
                 <p class="text-neutral/50">Cash Out</p>
             </button>
 
-            <button class="btn btn-primary btn-soft w-full flex-col py-10">
+            <button type="button" value="transfer-money-section" class="btn btn-primary btn-soft w-full flex-col py-10">
                 <img src="./assets/opt-3.png" alt="">
                 <p class="text-neutral/50">Transfer Money</p>
             </button>
@@ -238,6 +238,31 @@
                 <input id="cashout-input-pin" type="password" maxlength="4" class="w-full input rounded-full bg-base-200"
                     placeholder="Enter 4 digit pin number" />
                 <button type="button" id="btn-cashout" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- Transfer Money form  -->
+    <section id="transfer-money-section" class=" forms card bg-base-100 w-11/12 shadow mx-auto hidden">
+        <div class="card-body">
+            <h3 class="text-neutral font-bold text-lg mb-5">Transfer Money</h3>
+            <fieldset class="fieldset">
+                <label class="label text-neutral/70 text-base font-bold">User Account Number</label>
+                <input id="transfer-number" type="text" class="w-full input rounded-full bg-base-200"
+                    placeholder="Enter 11 digit number" />
+    
+                <br>
+    
+                <label class="label text-neutral/70 text-base font-bold">Amount</label>
+                <input id="transfer-amount" type="text" class="w-full input rounded-full bg-base-200"
+                    placeholder="Enter amount to withdraw" />
+    
+                <br>
+    
+                <label class="label text-neutral/70 text-base font-bold">Pin Number</label>
+                <input id="transfer-pin" type="password" maxlength="4" class="w-full input rounded-full bg-base-200"
+                    placeholder="Enter 4 digit pin number" />
+                <button type="button" id="btn-transfer" class="btn btn-primary mt-4 rounded-full">Send Now</button>
             </fieldset>
         </div>
     </section>

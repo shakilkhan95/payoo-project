@@ -12,8 +12,6 @@ document.getElementById("btn-container").addEventListener("click", (event) => {
     form.classList.add("hidden");
   }
 
-  if(getForm === null) return;
-
   paymentSection.classList.add("hidden");
 
   getForm.classList.remove("hidden");
