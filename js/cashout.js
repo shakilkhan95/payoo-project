@@ -21,7 +21,7 @@ document.getElementById("btn-cashout").addEventListener("click", () => {
     const newBalance = Number(balance) - Number(cashoutAmount);
     const balanceElement = getValue("balance", "element");
 
-    alert("Cashout Successful");
+    alert(`$${cashoutAmount} Cash out successful`);
 
     balanceElement.innerText = newBalance;
   }
