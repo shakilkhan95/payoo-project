@@ -39,7 +39,8 @@
     </div>
 
     <!-- login form  -->
-    <div class="card bg-base-100 w-11/12 shadow mt-20 mx-auto">
+    <div id="login-form" class="card bg-base-100 w-11/12 shadow mt-20 mx-auto">
+        <h3 class="text-lg text-neutral/90 font-bold">Login</h3>
         <div class="card-body">
             <fieldset class="fieldset">
                 <label class="label text-neutral text-base font-bold">Mobile Number</label>
@@ -48,6 +49,26 @@
                 <label class="label text-neutral text-base font-bold">4 digit pin</label>
                 <input id="login-input-pin" type="password" maxlength="4" class="w-full input rounded-full bg-base-200" placeholder="Enter 4 digit pin" />
                 <button type="button" id="btn-login" class="btn btn-primary mt-4 rounded-full">Login</button>
+                <p id="register-link" class="text-lg text-neutral/90 mt-5">Don't have account? <a class="underline" href="#register">Register</a></p>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- Register form  -->
+    <div id="register-form" class="card bg-base-100 w-11/12 shadow mt-20 mx-auto hidden">
+        <h3 class="text-lg text-neutral/90 font-bold">Register</h3>
+        <div class="card-body">
+            <fieldset class="fieldset">
+                <label class="label text-neutral text-base font-bold">Mobile Number</label>
+                <input id="login-input-number" type="text" maxlength="11" minlength="11"
+                    class="w-full input rounded-full bg-base-200" placeholder="Enter your number" />
+                <br>
+                <label class="label text-neutral text-base font-bold">4 digit pin</label>
+                <input id="login-input-pin" type="password" maxlength="4" class="w-full input rounded-full bg-base-200"
+                    placeholder="Enter 4 digit pin" />
+                <button type="button" id="btn-register" class="btn btn-primary mt-4 rounded-full">Register</button>
+                <p id="login-link" class="text-lg text-neutral/90 mt-5">Already have an account? <a class="underline"
+                        href="#register">Login</a></p>
             </fieldset>
         </div>
     </div>
@@ -55,6 +76,7 @@
 
     <!-- javaScript file link  -->
      <script src="./js/machine.js"></script>
+     <script src="./js/login-info.js"></script>
      <script src="./js/login.js"></script>
 </body>
 </html>
